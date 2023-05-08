@@ -15,6 +15,19 @@
 
 
     <title>BEST STORE.com</title>
+    <style>
+        .carousel-control-prev-icon {
+            position: absolute;
+
+            left: -5px;
+        }
+
+        .carousel-control-next-icon {
+            position: absolute;
+
+            right: -5px;
+        }
+    </style>
 
 </head>
 
@@ -88,7 +101,7 @@
         </div>
     </nav>
     <!-- toast like card -->
-    <div class="card bg-warning" style="margin:0px 0px 0px 0px;padding: 0px;">
+    <div class="card bg-warning sticky-top" style="margin:0px 0px 0px 0px;padding: 0px;">
         <div class="card-body text-center" style="padding: 5px;border-radius: 0px;">
             For Discounts And Offers <a href="#">CLICK HERE</a>
         </div>
@@ -97,391 +110,670 @@
     <!--  toast like card -->
     <!-- navbar ended -->
     <!-- main thing starts -->
-    <div class="" style="margin: 0px 40px 0 20px;">
-        <div class="row">
-            <div class="col col-lg-2 text-center">
-                <img src="Images/MEMES/main meme 1.jpg">
-            </div>
-            <div class="col -md-auto text-center">
-                <h2 style="font-size: 75px;margin-left: 0px;letter-spacing: 2px;">Welcome To <span
-                        style="color: blue;font-weight: bold;">BEST</span>&nbsp;<span
-                        style="font-weight: bold;">Store</span>
-                </h2>
-                <h5 style="font-size: 20px;text-align: center;letter-spacing: 10px;"><span
-                        style="letter-spacing: 0px;"></span> THE G.O.A.T OF ALL STORES<span
-                        style="letter-spacing: 0px;"></span></h5>
-                <h5 style="font-size: 10px;text-align: center;letter-spacing: 10px;">STORE FOR GIGA CHADS</h5>
-            </div>
-            <div class="col col-lg-2 text-center">
-                <img src="Images/MEMES/main meme 2.png" width=250px height=170px>
-            </div>
-        </div>
-    </div>
-
-    <!-- main thing ends -->
-    <!-- primary card starts -->
-    <div class="row row-cols-1 row-cols-md-5 g-4" style="margin: 10px;">
-        <!-- card1 -->
-        <div class="col">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title text-center">Gaming accessories</h5>
-                    <div class="container ">
-                        <div class="row">
-                            <div class="col text-center">
-                                <a href="#"><img src="Images/PRIMARY CARD/headset card 1.jpg" style="width: 80px;"></a>
-                                <p>HEADSETS</p>
-                            </div>
-                            <div class="col text-center">
-                                <a href="#"><img src="Images/PRIMARY CARD/chair card 1.jpg" style="width: 80px;"></a>
-                                <p>CHAIR</p>
-                            </div>
-
-                        </div>
-                        <div class="row">
-                            <div class="col text-center">
-                                <a href="#"><img src="Images/PRIMARY CARD/keyboard card 1.jpg" style="width: 80px;"></a>
-                                <p>KEYBOARD</p>
-                            </div>
-                            <div class="col text-center">
-                                <a href="#"><img src="Images/PRIMARY CARD/mouse card 1.jpg" style="width: 80px;"></a>
-                                <p>MOUSE</p>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="text-center">
-                        <a href="#" style="text-decoration: none;">SEE MORE</a>
-                    </div>
+    <div class="" style="background: url(Images/BACKGROUNDIMGS/bg1.jpg);">
+        <div class="" style="padding: 20px 40px 10px 20px">
+            <div class="row">
+                <div class="col col-lg-2 text-center">
+                    <img src="Images/ADS/ad2.jpg" width="300px">
+                </div>
+                <div class="col -md-auto text-center">
+                    <h2 style="font-size: 70px;margin-left: 0px;letter-spacing: 2px;color: white;">Welcome To<span>
+                            <img src="Images/LOGOS/logo text1.png" width="400px" style="margin-top: -10px;">
+                        </span>
+                    </h2>
+                    <h5 style="font-size: 20px;text-align: center;letter-spacing: 5px;color: white;font-weight: ;">THE
+                        G.O.A.T OF ALL
+                        STORES</h5>
+                    <h5
+                        style="font-size: 10px;text-align: center;letter-spacing: 10px;color: white;padding-bottom: 5px;">
+                        STORE FOR GIGA CHADS</h5>
+                </div>
+                <div class="col col-lg-2 text-center">
+                    <img src="Images/ADS/ad1.png" width=250px>
                 </div>
             </div>
         </div>
-        <!-- card2 -->
-        <div class="col">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title text-center">Gaming accessories</h5>
-                    <div class="container ">
-                        <div class="row">
-                            <div class="col text-center">
-                                <a href="#"><img src="Images/PRIMARY CARD/headset card 1.jpg" style="width: 80px;"></a>
-                                <p>HEADSETS</p>
-                            </div>
-                            <div class="col text-center">
-                                <a href="#"><img src="Images/PRIMARY CARD/chair card 1.jpg" style="width: 80px;"></a>
-                                <p>CHAIR</p>
-                            </div>
 
+        <!-- main thing ends -->
+        <!-- primary card starts carousel -->
+        <div id="carouselExampleIndicators" class="carousel  slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner" style="padding: 0 34px 30px 34px; margin-top: -10px;">
+                <div class="carousel-item active">
+                    <div class="row row-cols-1 row-cols-sm-5 g-4" style="margin: 10px;">
+                        <!-- card1 -->
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Gaming accessories</h5>
+                                    <div class="container ">
+                                        <div class="row">
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/headset card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>HEADSETS</p>
+                                            </div>
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/chair card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>CHAIR</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/keyboard card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>KEYBOARD</p>
+                                            </div>
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/mouse card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>MOUSE</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" style="text-decoration: none;">SEE MORE</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="row">
-                            <div class="col text-center">
-                                <a href="#"><img src="Images/PRIMARY CARD/keyboard card 1.jpg" style="width: 80px;"></a>
-                                <p>KEYBOARD</p>
-                            </div>
-                            <div class="col text-center">
-                                <a href="#"><img src="Images/PRIMARY CARD/mouse card 1.jpg" style="width: 80px;"></a>
-                                <p>MOUSE</p>
-                            </div>
+                        <!-- card2 -->
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Gaming accessories</h5>
+                                    <div class="container ">
+                                        <div class="row">
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/headset card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>HEADSETS</p>
+                                            </div>
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/chair card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>CHAIR</p>
+                                            </div>
 
+                                        </div>
+                                        <div class="row">
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/keyboard card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>KEYBOARD</p>
+                                            </div>
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/mouse card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>MOUSE</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" style="text-decoration: none;">SEE MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card3 -->
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Gaming accessories</h5>
+                                    <div class="container ">
+                                        <div class="row">
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/headset card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>HEADSETS</p>
+                                            </div>
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/chair card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>CHAIR</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/keyboard card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>KEYBOARD</p>
+                                            </div>
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/mouse card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>MOUSE</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" style="text-decoration: none;">SEE MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card4 -->
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Gaming accessories</h5>
+                                    <div class="container ">
+                                        <div class="row">
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/headset card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>HEADSETS</p>
+                                            </div>
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/chair card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>CHAIR</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/keyboard card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>KEYBOARD</p>
+                                            </div>
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/mouse card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>MOUSE</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" style="text-decoration: none;">SEE MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card5 -->
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Gaming accessories</h5>
+                                    <div class="container ">
+                                        <div class="row">
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/headset card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>HEADSETS</p>
+                                            </div>
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/chair card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>CHAIR</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/keyboard card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>KEYBOARD</p>
+                                            </div>
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/mouse card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>MOUSE</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" style="text-decoration: none;">SEE MORE</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="text-center">
-                        <a href="#" style="text-decoration: none;">SEE MORE</a>
+                </div>
+                <div class="carousel-item">
+                    <div class="row row-cols-1 row-cols-md-5 g-4" style="margin: 10px;">
+                        <!-- card1 -->
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Gaming accessories</h5>
+                                    <div class="container ">
+                                        <div class="row">
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/headset card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>HEADSETS</p>
+                                            </div>
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/chair card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>CHAIR</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/keyboard card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>KEYBOARD</p>
+                                            </div>
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/mouse card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>MOUSE</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" style="text-decoration: none;">SEE MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card2 -->
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Gaming accessories</h5>
+                                    <div class="container ">
+                                        <div class="row">
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/headset card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>HEADSETS</p>
+                                            </div>
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/chair card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>CHAIR</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/keyboard card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>KEYBOARD</p>
+                                            </div>
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/mouse card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>MOUSE</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" style="text-decoration: none;">SEE MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card3 -->
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Gaming accessories</h5>
+                                    <div class="container ">
+                                        <div class="row">
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/headset card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>HEADSETS</p>
+                                            </div>
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/chair card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>CHAIR</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/keyboard card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>KEYBOARD</p>
+                                            </div>
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/mouse card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>MOUSE</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" style="text-decoration: none;">SEE MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card4 -->
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Gaming accessories</h5>
+                                    <div class="container ">
+                                        <div class="row">
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/headset card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>HEADSETS</p>
+                                            </div>
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/chair card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>CHAIR</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/keyboard card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>KEYBOARD</p>
+                                            </div>
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/mouse card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>MOUSE</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" style="text-decoration: none;">SEE MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card5 -->
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Gaming accessories</h5>
+                                    <div class="container ">
+                                        <div class="row">
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/headset card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>HEADSETS</p>
+                                            </div>
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/chair card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>CHAIR</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/keyboard card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>KEYBOARD</p>
+                                            </div>
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/mouse card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>MOUSE</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" style="text-decoration: none;">SEE MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row row-cols-1 row-cols-md-5 g-4" style="margin: 10px;">
+                        <!-- card1 -->
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Gaming accessories</h5>
+                                    <div class="container ">
+                                        <div class="row">
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/headset card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>HEADSETS</p>
+                                            </div>
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/chair card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>CHAIR</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/keyboard card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>KEYBOARD</p>
+                                            </div>
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/mouse card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>MOUSE</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" style="text-decoration: none;">SEE MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card2 -->
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Gaming accessories</h5>
+                                    <div class="container ">
+                                        <div class="row">
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/headset card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>HEADSETS</p>
+                                            </div>
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/chair card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>CHAIR</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/keyboard card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>KEYBOARD</p>
+                                            </div>
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/mouse card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>MOUSE</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" style="text-decoration: none;">SEE MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card3 -->
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Gaming accessories</h5>
+                                    <div class="container ">
+                                        <div class="row">
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/headset card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>HEADSETS</p>
+                                            </div>
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/chair card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>CHAIR</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/keyboard card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>KEYBOARD</p>
+                                            </div>
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/mouse card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>MOUSE</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" style="text-decoration: none;">SEE MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card4 -->
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Gaming accessories</h5>
+                                    <div class="container ">
+                                        <div class="row">
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/headset card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>HEADSETS</p>
+                                            </div>
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/chair card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>CHAIR</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/keyboard card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>KEYBOARD</p>
+                                            </div>
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/mouse card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>MOUSE</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" style="text-decoration: none;">SEE MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card5 -->
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Gaming accessories</h5>
+                                    <div class="container ">
+                                        <div class="row">
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/headset card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>HEADSETS</p>
+                                            </div>
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/chair card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>CHAIR</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/keyboard card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>KEYBOARD</p>
+                                            </div>
+                                            <div class="col text-center">
+                                                <a href="#"><img src="Images/PRIMARY CARD/mouse card 1.jpg"
+                                                        style="width: 80px;"></a>
+                                                <p>MOUSE</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" style="text-decoration: none;">SEE MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- card3 -->
-        <div class="col">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title text-center">Gaming accessories</h5>
-                    <div class="container ">
-                        <div class="row">
-                            <div class="col text-center">
-                                <a href="#"><img src="Images/PRIMARY CARD/headset card 1.jpg" style="width: 80px;"></a>
-                                <p>HEADSETS</p>
-                            </div>
-                            <div class="col text-center">
-                                <a href="#"><img src="Images/PRIMARY CARD/chair card 1.jpg" style="width: 80px;"></a>
-                                <p>CHAIR</p>
-                            </div>
-
-                        </div>
-                        <div class="row">
-                            <div class="col text-center">
-                                <a href="#"><img src="Images/PRIMARY CARD/keyboard card 1.jpg" style="width: 80px;"></a>
-                                <p>KEYBOARD</p>
-                            </div>
-                            <div class="col text-center">
-                                <a href="#"><img src="Images/PRIMARY CARD/mouse card 1.jpg" style="width: 80px;"></a>
-                                <p>MOUSE</p>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="text-center">
-                        <a href="#" style="text-decoration: none;">SEE MORE</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- card4 -->
-        <div class="col">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title text-center">Gaming accessories</h5>
-                    <div class="container ">
-                        <div class="row">
-                            <div class="col text-center">
-                                <a href="#"><img src="Images/PRIMARY CARD/headset card 1.jpg" style="width: 80px;"></a>
-                                <p>HEADSETS</p>
-                            </div>
-                            <div class="col text-center">
-                                <a href="#"><img src="Images/PRIMARY CARD/chair card 1.jpg" style="width: 80px;"></a>
-                                <p>CHAIR</p>
-                            </div>
-
-                        </div>
-                        <div class="row">
-                            <div class="col text-center">
-                                <a href="#"><img src="Images/PRIMARY CARD/keyboard card 1.jpg" style="width: 80px;"></a>
-                                <p>KEYBOARD</p>
-                            </div>
-                            <div class="col text-center">
-                                <a href="#"><img src="Images/PRIMARY CARD/mouse card 1.jpg" style="width: 80px;"></a>
-                                <p>MOUSE</p>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="text-center">
-                        <a href="#" style="text-decoration: none;">SEE MORE</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- card5 -->
-        <div class="col">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title text-center">Gaming accessories</h5>
-                    <div class="container ">
-                        <div class="row">
-                            <div class="col text-center">
-                                <a href="#"><img src="Images/PRIMARY CARD/headset card 1.jpg" style="width: 80px;"></a>
-                                <p>HEADSETS</p>
-                            </div>
-                            <div class="col text-center">
-                                <a href="#"><img src="Images/PRIMARY CARD/chair card 1.jpg" style="width: 80px;"></a>
-                                <p>CHAIR</p>
-                            </div>
-
-                        </div>
-                        <div class="row">
-                            <div class="col text-center">
-                                <a href="#"><img src="Images/PRIMARY CARD/keyboard card 1.jpg" style="width: 80px;"></a>
-                                <p>KEYBOARD</p>
-                            </div>
-                            <div class="col text-center">
-                                <a href="#"><img src="Images/PRIMARY CARD/mouse card 1.jpg" style="width: 80px;"></a>
-                                <p>MOUSE</p>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="text-center">
-                        <a href="#" style="text-decoration: none;">SEE MORE</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- secondary card -->
-    <div class="row row-cols-1 row-cols-md-5 g-4" style="margin: -10px 10px 5px 10px;">
-        <!-- card1 -->
-        <div class="col">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title text-center">Gaming accessories</h5>
-                    <div class="container ">
-                        <div class="row">
-                            <div class="col text-center">
-                                <a href="#"><img src="Images/PRIMARY CARD/headset card 1.jpg" style="width: 80px;"></a>
-                                <p>HEADSETS</p>
-                            </div>
-                            <div class="col text-center">
-                                <a href="#"><img src="Images/PRIMARY CARD/chair card 1.jpg" style="width: 80px;"></a>
-                                <p>CHAIR</p>
-                            </div>
-
-                        </div>
-                        <div class="row">
-                            <div class="col text-center">
-                                <a href="#"><img src="Images/PRIMARY CARD/keyboard card 1.jpg" style="width: 80px;"></a>
-                                <p>KEYBOARD</p>
-                            </div>
-                            <div class="col text-center">
-                                <a href="#"><img src="Images/PRIMARY CARD/mouse card 1.jpg" style="width: 80px;"></a>
-                                <p>MOUSE</p>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="text-center">
-                        <a href="#" style="text-decoration: none;">SEE MORE</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- card2 -->
-        <div class="col">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title text-center">Gaming accessories</h5>
-                    <div class="container ">
-                        <div class="row">
-                            <div class="col text-center">
-                                <a href="#"><img src="Images/PRIMARY CARD/headset card 1.jpg" style="width: 80px;"></a>
-                                <p>HEADSETS</p>
-                            </div>
-                            <div class="col text-center">
-                                <a href="#"><img src="Images/PRIMARY CARD/chair card 1.jpg" style="width: 80px;"></a>
-                                <p>CHAIR</p>
-                            </div>
-
-                        </div>
-                        <div class="row">
-                            <div class="col text-center">
-                                <a href="#"><img src="Images/PRIMARY CARD/keyboard card 1.jpg" style="width: 80px;"></a>
-                                <p>KEYBOARD</p>
-                            </div>
-                            <div class="col text-center">
-                                <a href="#"><img src="Images/PRIMARY CARD/mouse card 1.jpg" style="width: 80px;"></a>
-                                <p>MOUSE</p>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="text-center">
-                        <a href="#" style="text-decoration: none;">SEE MORE</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- card3 -->
-        <div class="col">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title text-center">Gaming accessories</h5>
-                    <div class="container ">
-                        <div class="row">
-                            <div class="col text-center">
-                                <a href="#"><img src="Images/PRIMARY CARD/headset card 1.jpg" style="width: 80px;"></a>
-                                <p>HEADSETS</p>
-                            </div>
-                            <div class="col text-center">
-                                <a href="#"><img src="Images/PRIMARY CARD/chair card 1.jpg" style="width: 80px;"></a>
-                                <p>CHAIR</p>
-                            </div>
-
-                        </div>
-                        <div class="row">
-                            <div class="col text-center">
-                                <a href="#"><img src="Images/PRIMARY CARD/keyboard card 1.jpg" style="width: 80px;"></a>
-                                <p>KEYBOARD</p>
-                            </div>
-                            <div class="col text-center">
-                                <a href="#"><img src="Images/PRIMARY CARD/mouse card 1.jpg" style="width: 80px;"></a>
-                                <p>MOUSE</p>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="text-center">
-                        <a href="#" style="text-decoration: none;">SEE MORE</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- card4 -->
-        <div class="col">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title text-center">Gaming accessories</h5>
-                    <div class="container ">
-                        <div class="row">
-                            <div class="col text-center">
-                                <a href="#"><img src="Images/PRIMARY CARD/headset card 1.jpg" style="width: 80px;"></a>
-                                <p>HEADSETS</p>
-                            </div>
-                            <div class="col text-center">
-                                <a href="#"><img src="Images/PRIMARY CARD/chair card 1.jpg" style="width: 80px;"></a>
-                                <p>CHAIR</p>
-                            </div>
-
-                        </div>
-                        <div class="row">
-                            <div class="col text-center">
-                                <a href="#"><img src="Images/PRIMARY CARD/keyboard card 1.jpg" style="width: 80px;"></a>
-                                <p>KEYBOARD</p>
-                            </div>
-                            <div class="col text-center">
-                                <a href="#"><img src="Images/PRIMARY CARD/mouse card 1.jpg" style="width: 80px;"></a>
-                                <p>MOUSE</p>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="text-center">
-                        <a href="#" style="text-decoration: none;">SEE MORE</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- card5 -->
-        <div class="col">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title text-center">Gaming accessories</h5>
-                    <div class="container ">
-                        <div class="row">
-                            <div class="col text-center">
-                                <a href="#"><img src="Images/PRIMARY CARD/headset card 1.jpg" style="width: 80px;"></a>
-                                <p>HEADSETS</p>
-                            </div>
-                            <div class="col text-center">
-                                <a href="#"><img src="Images/PRIMARY CARD/chair card 1.jpg" style="width: 80px;"></a>
-                                <p>CHAIR</p>
-                            </div>
-
-                        </div>
-                        <div class="row">
-                            <div class="col text-center">
-                                <a href="#"><img src="Images/PRIMARY CARD/keyboard card 1.jpg" style="width: 80px;"></a>
-                                <p>KEYBOARD</p>
-                            </div>
-                            <div class="col text-center">
-                                <a href="#"><img src="Images/PRIMARY CARD/mouse card 1.jpg" style="width: 80px;"></a>
-                                <p>MOUSE</p>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="text-center">
-                        <a href="#" style="text-decoration: none;">SEE MORE</a>
-                    </div>
-                </div>
-            </div>
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+             <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span> 
+             <span class="visually-hidden">Previous</span> 
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark" aria-hidden="false"></span>
+             <span class="visually-hidden">Next</span> 
+        </button> -->
         </div>
     </div>
     <!-- cards ends -->
     <!-- multicard carousel starts -->
-    
-
-
-
-
+    <footer class="bg-dark" style="padding-bottom: 10px;">
+        <div class="text-center" style="color: rgb(157, 151, 151);">
+            <div class="row">
+              <div class="col" style="line-height: 1.9;">
+                Sign in for better experience
+                <a href="#" class="btn btn-outline-success btn-sm" style="width: 70%;">Sign in</a>
+              </div>
+              <div class="col-6">
+                PRACTICE WEBSITE YOU CAN CHECK IN GITHUB
+              </div>
+              <div class="col">
+                3 of 3
+              </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
